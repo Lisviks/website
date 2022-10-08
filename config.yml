@@ -1,0 +1,37 @@
+baseURL: 'http://example.org/'
+languageCode: en-us
+title: Deividas Rimkus
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: Hello Stranger
+    Content: Welcome to my blog. Here you'll find blog posts about random things, but mainly coding.
+  socialIcons:
+    - name: twitter 
+      url: 'https://twitter.com/DRimkusDev/'
+    - name: github 
+      url: 'https://github.com/Lisviks/'
+
+  cover:
+    linkFullImages: true
+
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags 
+      name: Tags 
+      url: /tags/
+      weight: 20
+    - identifier: archives 
+      name: Archives 
+      url: /archives/
+      weight: 20
