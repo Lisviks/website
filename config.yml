@@ -1,7 +1,14 @@
-baseURL: 'https://deividas.netlify.app/'
+baseURL: 'https://deividas.blog/'
 languageCode: en-us
 title: Deividas Rimkus
 theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-GSNTB6M151 
 
 params:
   homeInfoParams:
@@ -35,3 +42,4 @@ menu:
       name: Archives 
       url: /archives/
       weight: 20
+
