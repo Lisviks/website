@@ -1,12 +1,14 @@
 ---
-title: "My Neovim Setup"
+title: 'My Neovim Setup'
 date: 2022-10-09T13:12:41+01:00
-draft: false 
+draft: false
 summary: 'I am new to neovim and this is my neovim setup.'
 cover:
-    image: images/neovim-setup-cover.jpg
-    alt: 'Post cover'
-    caption: 'image source: https://unsplash.com/photos/Ek9Znm8lQ1U'
+  image: images/neovim-setup-cover.jpg
+  alt: 'Post cover'
+  caption: 'image source: https://unsplash.com/photos/Ek9Znm8lQ1U'
+tags: []
+categories: []
 ---
 
 I am new to neovim and haven't used vim much either, so all of this is still pretty new to me. Most of the setup I got was by following [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a) by [alpha2phi](https://alpha2phi.medium.com/). Or rather almost all of my setup is from him.
@@ -15,20 +17,20 @@ I am new to neovim and haven't used vim much either, so all of this is still pre
 
 ```text
 nvim
-├── lua 
-│   ├── config 
-│   │   ├── bufferline.lua 
-│   │   ├── coq.lua 
-│   │   ├── nvimtree.lua 
-│   │   └── whichkey.lua 
-│   ├── user  
-│   │   ├── init.lua 
-│   │   ├── keymaps.lua 
-│   │   ├── packer.lua 
-│   │   └── sets.lua 
-│   └── utils 
-│       └── finder.lua 
-└── init.lua 
+├── lua
+│   ├── config
+│   │   ├── bufferline.lua
+│   │   ├── coq.lua
+│   │   ├── nvimtree.lua
+│   │   └── whichkey.lua
+│   ├── user
+│   │   ├── init.lua
+│   │   ├── keymaps.lua
+│   │   ├── packer.lua
+│   │   └── sets.lua
+│   └── utils
+│       └── finder.lua
+└── init.lua
 ```
 
 ## Settings (lua/user/sets.lua)
@@ -52,9 +54,10 @@ vim.g.maplocalleader = ' '
 
 To use them we need to require them into `init.lua`. Create `init.lua` file inside `lua/user/` folder and add `require('user.sets')`. After that create another `init.lua` file inside your config root folder and add `require('user')`.
 
-## Plugins 
+## Plugins
 
 The first plugin I added was [wakatime](https://github.com/wakatime/vim-wakatime), because I like tracking how much time I spend coding. The theme I use is [dracula](https://draculatheme.com/vim).
+
 - [WhichKey](https://github.com/folke/which-key.nvim) - shows possible key bindings
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim) - easy way to comment
 - [Nvim Tree](https://github.com/nvim-tree/nvim-tree.lua) - File explorer
@@ -166,7 +169,7 @@ local keymap = vim.api.nvim_set_keymap
 local default_opts = { noremap = true, silent = true }
 
 -- Switch buffer
-keymap('n', '<S-h>', ':bprevious<CR>', default_opts) 
+keymap('n', '<S-h>', ':bprevious<CR>', default_opts)
 keymap('n', '<S-l>', ':bnext<CR>', default_opts)
 
 -- Move selected line / block of text in normal / visual mode
