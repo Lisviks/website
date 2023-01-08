@@ -85,4 +85,4 @@ void add() {
 }
 ```
 
-This was just a basic example of how to use a provider package. Check out [Provider](https://pub.dev/packages/provider) documentation for more.
+This was just a basic example of how to use a provider package. [GitHub Repo](https://github.com/Lisviks/flutter-provider-example). Check out [Provider](https://pub.dev/packages/provider) documentation for more.
