@@ -4,7 +4,7 @@ date: 2022-10-09T13:12:41+01:00
 draft: false
 summary: 'I am new to neovim and this is my neovim setup.'
 cover:
-  image: images/neovim-setup-cover.jpg
+  image: cover.jpg
   alt: 'Post cover'
   caption: 'image source: https://unsplash.com/photos/Ek9Znm8lQ1U'
 tags: []

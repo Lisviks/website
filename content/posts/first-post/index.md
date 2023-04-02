@@ -1,11 +1,11 @@
 ---
-title: "First Post/First Website"
+title: 'First Post/First Website'
 date: 2022-10-08T17:56:38+01:00
-draft: false 
+draft: false
 cover:
-    image: images/first-post-cover.jpg
-    alt: 'Post cover'
-    caption: 'image source: https://unsplash.com/photos/cckf4TsHAuw'
+  image: cover.jpg
+  alt: 'Post cover'
+  caption: 'image source: https://unsplash.com/photos/cckf4TsHAuw'
 summary: 'This is my first blog post ever.'
 tags: []
 categories: []
@@ -21,4 +21,3 @@ I am using `hugo` to build this website. Since I just learned of it and don't re
 
 - [FrontendMentor Profile](https://www.frontendmentor.io/profile/Lisviks)
 - [GitHub Profile](https://github.com/Lisviks)
-

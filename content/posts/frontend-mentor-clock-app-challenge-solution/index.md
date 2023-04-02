@@ -6,7 +6,7 @@ summary: 'This is my solution to Frontend Mentor clock app challenge, using Vite
 tags: [html, scss, typescript, vite]
 categories: [programming]
 cover:
-  image: images/fem-clock-app-screenshot.png
+  image: screenshot.png
   alt: 'Post cover'
 ---
 
@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](/images/fem-clock-app-screenshot.png)
-![](/images/fem-clock-app-expanded-screenshot.png)
+![](./screenshot.png)
+![](./expanded-screenshot.png)
 
 ### Links
 
