@@ -6,8 +6,24 @@
   box-sizing: border-box;
 }
 
+/* THEME START */
+
+body.light {
+  --background: #fff;
+  --font-color: #000;
+}
+
+body.dark {
+  --background: #222;
+  --font-color: #fff;
+}
+
+/* THEME END */
+
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+  transition: color 0.3s, background-color 0.3s;
 }
 
 header,
@@ -20,6 +36,10 @@ footer {
 header {
   font-size: 1.5rem;
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color);
 }
 
 img {
@@ -28,8 +48,19 @@ img {
 }
 
 a {
-  color: #000;
+  color: var(--font-color);
   text-decoration: none;
+}
+
+header .theme-switch {
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+header .theme-switch:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .posts {
@@ -56,12 +87,13 @@ a {
 .posts .card h2 {
   font-size: 2rem;
   margin: 1rem 0;
+  color: var(--font-color);
 }
 
 .posts .card .preview {
   margin: 1rem 0;
   font-size: 0.9rem;
-  color: #000;
+  color: var(--font-color);
 }
 
 .posts .card .date {
@@ -72,6 +104,7 @@ a {
 footer {
   text-align: center;
   margin-top: 3rem;
+  color: var(--font-color);
 }
 
 footer .socials {
