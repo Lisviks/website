@@ -7,11 +7,18 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (lsTheme !== null) {
     body.classList.add(lsTheme);
+    if (lsTheme === 'light') {
+      themeIcon.src = '/assets/icons/moon-icon.svg';
+    } else if (lsTheme === 'dark') {
+      themeIcon.src = '/assets/icons/sun-icon.svg';
+    }
   } else {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
       body.classList.add('light');
+      themeIcon.src = '/assets/icons/moon-icon.svg';
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       body.classList.add('dark');
+      themeIcon.src = '/assets/icons/sun-icon.svg';
     }
   }
 });
