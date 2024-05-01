@@ -8,7 +8,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
   if (lsTheme !== null) {
     body.classList.add(lsTheme);
   } else {
-    body.classList.add('light');
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      body.classList.add('light');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      body.classList.add('dark');
+    }
   }
 });
 
