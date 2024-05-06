@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/post.css" />
+    <script src="/js/theme.js" defer></script>
+    <title>Simple Theme Switch | Deividas Rimkus</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <div class="logo">Deividas Rimkus</div>
+      </a>
+      <div class="theme-switch"><img src="/assets/icons/moon-icon.svg" alt="theme switch" /></div>
+    </header>
+    <section class="post">
+      <h1>Simple Theme Switch</h1>
+      <p class="date">April 28, 2024</p>
+      <div class="thumbnail">
+        <img src="/assets/images/simple-theme-switch.webp" alt="simple theme switch thumbnail" />
+      </div>
+      <p>
+        This is a simple theme switch using just HTML, CSS, and JavaScript. To switch a theme, all we will do is change
+        a class on the body tag. First, add the class "light" to the body tag and then create a button that will be used
+        to switch the theme from light to dark and back when clicked.
+      </p>
+      <p><script src="https://gist.github.com/Lisviks/d4d38e9d5585f7e31ab158873c3a4486.js?file=index.html"></script></p>
+      <p>After that, create custom CSS properties for each theme and use those properties throughout the app.</p>
+      <p><script src="https://gist.github.com/Lisviks/d4d38e9d5585f7e31ab158873c3a4486.js?file=style.css"></script></p>
+      <p>
+        Lastly, using JavaScript, select both the button used to switch the theme and the body tag. After that, add an
+        event listener to the button. Inside the callback function, check what the current class on the body tag is and
+        then remove that class and add the other theme's class to the body tag. If the body tag currently has the
+        "light" class, remove that and add the "dark" class, and vice versa.
+      </p>
+      <p><script src="https://gist.github.com/Lisviks/d4d38e9d5585f7e31ab158873c3a4486.js?file=main.js"></script></p>
+      <p>
+        And that is a very simple theme switch. You can also save it in local storage so that the next time someone
+        visits the website, it will automatically remember the last theme used. Alternatively, you can use the system's
+        preferred theme.
+      </p>
+    </section>
+    <footer>
+      <div class="socials">
+        <a href="https://github.com/Lisviks" target="_blank" class="github"
+          ><img src="/assets/icons/github.svg" alt=""
+        /></a>
+        <a href="https://twitter.com/drimkust" target="_blank" class="x"
+          ><img src="/assets/icons/xTwitter.svg" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/deividas-rimkus-8306904b/" target="_blank" class="linkedin"
+          ><img src="/assets/icons/linkedin.svg" alt=""
+        /></a>
+      </div>
+      <p>Copyright © Deividas Rimkus 2024</p>
+    </footer>
+  </body>
+</html>

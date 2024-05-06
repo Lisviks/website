@@ -73,6 +73,11 @@ header .theme-switch:hover {
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.4);
   padding: 1.5rem;
   transition: transform 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+.posts .card:last-child {
+  margin-bottom: 0;
 }
 
 .posts .card:hover {
