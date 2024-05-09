@@ -8,6 +8,10 @@
 
 /* THEME START */
 
+body.hidden {
+  display: none;
+}
+
 body.light {
   --background: #fff;
   --font-color: #000;

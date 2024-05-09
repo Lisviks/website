@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
   if (lsTheme !== null) {
     body.classList.add(lsTheme);
+    body.classList.remove('hidden');
     if (lsTheme === 'light') {
       themeIcon.src = '/assets/icons/moon-icon.svg';
     } else if (lsTheme === 'dark') {
@@ -16,9 +17,11 @@ window.addEventListener('DOMContentLoaded', (e) => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
       body.classList.add('light');
       themeIcon.src = '/assets/icons/moon-icon.svg';
+      body.classList.remove('hidden');
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       body.classList.add('dark');
       themeIcon.src = '/assets/icons/sun-icon.svg';
+      body.classList.remove('hidden');
     }
   }
 });
