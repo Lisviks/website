@@ -147,3 +147,13 @@ footer .socials a:hover {
 footer p {
   font-size: 0.8rem;
 }
+
+@media (max-width: 800px) {
+  body {
+    padding: 0 2rem;
+  }
+
+  .posts {
+    padding: 1rem 0;
+  }
+}
