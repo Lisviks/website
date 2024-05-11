@@ -13,6 +13,27 @@
   color: #999;
 }
 
+.post .social-share {
+  display: flex;
+  align-items: center;
+}
+
+.post .social-share .twitter-share-button {
+  margin-right: 1rem;
+}
+
+.post .social-share .IN-widget button {
+  display: flex !important;
+  align-items: center !important;
+  height: 28px !important;
+  font-size: 13px !important;
+}
+
+.post .social-share .IN-widget button svg {
+  height: 28px !important;
+  width: 28px !important;
+}
+
 .post .thumbnail {
   border-radius: 1rem;
   overflow: hidden;
